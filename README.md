@@ -727,23 +727,23 @@ Add appropriate exception handling routines.
 
 Add Validations
 
-* [ ] Add the following validations to your code
-  * [ ] Course Model
-    * [ ] Coursename
-      * [ ] Not Null
-      * [ ] Minimum 2 characters
-      * [ ] Maximum 50 characters
-  * [ ] Student Model
-    * [ ] Name
-      * [ ] Not Null
-      * [ ] Minimum 2 characters
-      * [ ] Maximum 30 characters
-  * [ ] Instructor Model
-    * [ ] Name
-      * [ ] Not Null
-      * [ ] Minimum 2 characters
-      * [ ] Maximum 30 characters
-  * [ ] Each validation should report an appropriate exception message if violated
+* [*] Add the following validations to your code
+  * [*] Course Model
+    * [*] Coursename
+      * [*] Not Null
+      * [*] Minimum 2 characters
+      * [*] Maximum 50 characters
+  * [*] Student Model
+    * [*] Name
+      * [*] Not Null
+      * [*] Minimum 2 characters
+      * [*] Maximum 30 characters
+  * [*] Instructor Model
+    * [*] Name
+      * [*] Not Null
+      * [*] Minimum 2 characters
+      * [*] Maximum 30 characters
+  * [*] Each validation should report an appropriate exception message if violated
 
 Get Data from External API
 

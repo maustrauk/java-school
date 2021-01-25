@@ -1,8 +1,10 @@
 package com.lambdaschool.schools.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +27,8 @@ public class Instructor
      * The Instructor's name (String)
      */
     @Column(nullable = false)
+    @Length(min = 2, max = 30)
+    @NotNull
     private String name;
 
     /**

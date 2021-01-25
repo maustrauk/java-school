@@ -1,8 +1,10 @@
 package com.lambdaschool.schools.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -25,8 +27,10 @@ public class Course
     /**
      * Name (String) of this Course. Cannot be null and must be unique
      */
-    @Column(nullable = true,
+    @Column(nullable = false,
         unique = true)
+    @Length(min = 2, max = 50)
+    @NotNull
     private String coursename;
 
     /**
