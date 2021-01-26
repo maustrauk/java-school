@@ -31,6 +31,9 @@ public class Instructor
     @NotNull
     private String name;
 
+    @Transient
+    private String advice;
+
     /**
      * List of courses associated with this instructor. Does not get saved in the database directly.
      * Forms a one to many relationship with courses. One instructor to many courses.
@@ -98,6 +101,15 @@ public class Instructor
     public void setName(String name)
     {
         this.name = name;
+    }
+
+
+    public String getAdvice() {
+        return advice;
+    }
+
+    public void setAdvice(String advice) {
+        this.advice = advice;
     }
 
     /**
